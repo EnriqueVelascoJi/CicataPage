@@ -1,0 +1,657 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Roboto:wght@300;400;700&display=swap');
+:root {
+    --font1: 'Roboto';
+    --font2: 'Raleway';
+    --color-gris: #E6E6E6;
+    --color-ginda: #6B2848;
+    --sombra: 3px 3px 30px rgba(0, 0, 0, 0.3);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font1);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*Animaciones*/
+.imagen-registro {
+    animation: ilustrationAnimate ease-in 1s infinite alternate;
+}
+/* Estilos de la vlidación*/
+#formulario2 .no-validate {
+    border: 3px solid red;
+}
+#formulario4 .no-validate {
+    border: 3px solid red;
+}
+#formulario1 .pregunta,
+#formulario2 .pregunta,
+#formulario4 .pregunta,
+#formulario5 .pregunta   {
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    display: inline-block;
+    width: 5%;
+    height: 60%;
+    font-size: 1px;
+    margin-top: 0;
+}
+
+a {
+    color: #000;
+    display: inline;
+}
+a:hover {
+    color: #7aa3a8;
+    display: inline;
+}
+.titulo-formulario {
+    margin-bottom: 10px;
+    color: var(--color-gris);
+    font-family: var(--font2);
+    font-weight: 300;
+}
+button {
+    cursor: pointer;
+}
+button[type="submit"], button[type="button"]{
+    color: #fff;
+    background-color:#7aa3a8 ;
+}
+
+input, button[type="submit"], button[type="button"], select,
+textarea {
+    font-size: 13px;
+    box-shadow: var(--sombra);
+    border-radius: 5px;
+ }
+/* Parte superrior de la pahina desde el encabezado hata la imgen de lamina*/
+.encabezado {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.encabezado-titulo {
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+.encabezado-lamina {
+    width: 100%;
+    height: 30vh;
+    
+}
+.encabezado-lamina img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Parte de inicio de sesión del formulario Formulario1*/
+#principal {
+    background-color: var(--color-gris);
+}
+#principal .container{
+    height: 50vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.inicio-sesion{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: var(--sombra);
+    /* display: none; */
+}
+.contenedor1 {
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.contenedor1 img {
+    width: 80%;
+    height: 70%;
+}
+
+.contenedor2{
+    width: 50%;
+    background-color: var(--color-ginda);
+    opacity: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedor2 form {
+    height: 60%;
+    width: 70%;
+    text-align: center;
+}
+#formulario1 .campo {
+    width: 100%;
+    height: 40%;
+    text-align: start;
+    
+}
+.campo .icono {
+    text-align: center;
+    height: 23px;
+}
+#formulario1 input {
+    margin-top: 10px;
+    height: 50%;
+    width: 70%;
+    margin-left: 10px;
+    background-color: var(--color-gris);
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    font-family: var(--font2);
+    
+}
+
+#formulario1 button {
+    height: 20%;
+    width: 30%;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    font-family: var(--font2);
+
+}
+#formulario1 button:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+
+}
+
+/*Formulario de Registro*/
+
+
+.registro {
+    width: 100%;
+    height: 80%;
+    background-color: var(--color-ginda);
+    box-shadow: var(--sombra);
+    display: none;
+}
+.contenedor3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    text-align: center;
+}
+.contenedor3 form {
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    text-align: center;
+    
+}
+#formulario2 .campo {
+    width: 50%;
+    height: 20%;
+}
+
+#formulario2 .campo3,
+.campo5, .campo7, .campo9{
+    text-align: left;
+}
+#formulario2 .campo4,
+#formulario2 .campo6,
+#formulario2 .campo8,
+#formulario2 .campo10{
+    text-align: right;
+}
+#formulario2 .campo10 {
+    flex-grow: 2;
+}
+#formulario2 input,select {
+    
+    height: 80%;
+    width: 70%;
+    margin-left: 10px;
+    background-color: var(--color-gris);
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    font-family: var(--font2);
+}
+#formulario2 .campo10 input{
+    width: 35%;
+}
+#formulario2 .campo8 input{
+    width: 64%;
+}
+
+.siguiente {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*Formulario de Registro2*/
+
+
+.registro2 {
+    width: 100%;
+    height: 80%;
+    background-color: var(--color-ginda);
+    box-shadow: var(--sombra);
+    display: none;
+    
+}
+
+#formulario4 .campo {
+    width: 50%;
+    height: 20%;
+}
+
+#formulario4 .campo20 {
+    width: 100%;
+    text-align: left;
+}
+#formulario4 .campo21 {
+    width: 100%;
+    text-align: right;
+    display: none;
+}
+#formulario4 .campo22,
+#formulario4 .campo24 {
+    text-align: left;
+    display: none;
+}
+#formulario4 .campo23,
+#formulario4 .campo25 {
+    text-align: right;
+    display: none;
+}
+#formulario4 .campo11,
+.campo13 {
+    text-align: left;
+}
+#formulario4 .campo12,
+.campo14 {
+    text-align: right;
+}
+#formulario4 div:nth-child(-n+5) input {
+    width: 80%;
+}
+#formulario4 input,select, textarea {
+    
+    height: 80%;
+    width: 70%;
+    margin-left: 10px;
+    background-color: var(--color-gris);
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    font-family: var(--font2);
+}
+#formulario4 textarea {
+    height: 130%;
+    padding: 1px 10px;
+}
+#formulario4 .campo20 select,
+#formulario4 .campo21 select{
+    width: 35%;
+}
+
+.anterior {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#formulario4 button {
+    margin-top: 20px;
+    height: 20%;
+    width: 30%;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    font-family: var(--font2);
+}
+#formulario4 button:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+
+}
+
+/*Recuperar Contraseña*/
+.recuperar {
+    width: 100%;
+    height: 80%;
+    background-color: var(--color-ginda);
+    box-shadow: var(--sombra);
+    display: none;
+    
+}
+#formulario5 .campo {
+    width: 50%;
+    height: 20%;
+}
+#formulario5 input,select {
+    
+    height: 80%;
+    width: 70%;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    background-color: var(--color-gris);
+    font-family: var(--font2);
+}
+#formulario5 .comprobarUsuario{
+    outline: none;
+}
+
+#formulario5 button[type="submit"]{
+    height: 20%;
+    width: 30%;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    font-family: var(--font2);
+}
+#formulario5 button[type="submit"]:hover{
+    transform: scale(1.1);
+    transition: ease-in-out;
+}
+#formulario5 div:nth-child(n+2) input {
+    width: 80%;
+}
+#formulario5 .campo15 {
+    width: 100%;
+    text-align: start;
+}
+#formulario5 .campo15 input{
+    width: 50%;
+    margin-right: 7px;
+}
+
+.comprobarUsuario {
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+.campo16, .campo18 {
+    text-align: left;
+    
+}
+.campo17, .campo19 {
+    text-align: right;
+}
+
+@media screen and (max-width:1028px){
+
+    a,p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    input,select {
+        font-size: 10px;
+    }
+    .titulo-formulario {
+        margin-bottom: 10px 0;
+        color: var(--color-gris);
+        font-family: var(--font2);
+        font-weight: 300;
+        font-size: 20px;
+    }
+    
+    .inicio-sesion{
+        flex-wrap: wrap;
+        height: 90%;
+        margin: auto;
+        /* display: none; */
+    }
+    .encabezado-titulo {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        
+    }
+    .contenedor1 {
+        width: 100%;
+        height: 40%;
+    }
+    .contenedor2 {
+        width: 100%;
+        height: 60%;
+    }
+    #formulario1 .campo {
+        width: 100%;
+        height: 40%;
+        text-align: center;
+        
+    }
+    
+    #formulario1 input {
+        margin-top: 10px;
+        height: 60%;
+        width: 60%;
+    }
+    
+    #formulario1 button {
+        height: 23%;
+        width: 30%;
+        font-size: 12px;
+        outline: none;
+        border: none;
+        padding: 0 10px;
+        font-family: var(--font2);
+    
+    }
+    #formulario2 .campo {
+        height: 20%;
+    }
+    #formulario4 .campo {
+        height: 20%;
+    }
+    #formulario5 .campo {
+        height: 20%;
+    }
+    #formulario4 button {
+        height: 15%;
+        font-size: 12px;
+    }
+    #formulario5 button.btnRecuperar {
+        height: 15%;
+        font-size: 12px;
+       
+    }
+    #formulario4 .campo:nth-child(n+2) input{
+        width: 73%;
+        margin-right: 0;
+    }
+    .campo2{
+        margin-left: -13px;
+    }
+        
+
+}
+@media screen and (max-width:600px){
+    /* #principal {
+        height: 65vh;
+    }
+    .registro2 {
+        height: 95%;
+    } */
+
+    a,p {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    input,select, textarea {
+        font-size: 8px !important;
+    }
+    .titulo-formulario {
+        margin-bottom: 10px 0;
+        color: var(--color-gris);
+        font-family: var(--font2);
+        font-weight: 300;
+        font-size: 15px;
+    }
+    .campo2{
+        margin-left: -7px;
+    }
+       
+    
+    .inicio-sesion{
+        flex-wrap: wrap;
+        height: 90%;
+        margin: auto;
+        /* display: none; */
+    }
+    .encabezado-titulo {
+        font-size: 17px;
+        font-weight: 400;
+        text-align: center;
+        
+    }
+    .contenedor1 {
+        width: 100%;
+        height: 40%;
+    }
+    .contenedor2 {
+        width: 100%;
+        height: 60%;
+    }
+    #formulario1 .campo {
+        width: 100%;
+        height: 40%;
+        text-align: center;
+        
+    }
+    
+    #formulario1 input {
+        margin-top: 10px;
+        height: 60%;
+        width: 60%;
+    }
+    
+    #formulario1 button {
+        height: 23%;
+        width: 30%;
+        font-size: 8px;
+        text-align: center;
+        outline: none;
+        border: none;
+        padding: 0 3px;
+        font-family: var(--font2);
+    
+    }
+    #formulario2 .campo {
+        height: 15%;
+        width: 100%;
+        text-align: center;
+    }
+    #formulario2 .campo10 input{
+        width: 70%;
+    }
+    #formulario4 .campo {
+        height: 23px !important;
+        width: 100%;
+        text-align: center;
+    }
+    #formulario4 .campo24 {
+        width: 80%;
+        position: absolute;
+        bottom: 70px;
+    }
+    #formulario4 textarea {
+        margin-left: -6px;
+
+    }
+    #formulario4 select,
+    #formulario4 .campo12 input,
+    #formulario4 .campo14 input,
+    #formulario4 .campo23 input,
+    #formulario4 .campo25 input {
+        margin-left: -5px;
+    }
+    #formulario4 .pregunta {
+        position: relative;
+        top: -1px;
+    }
+    #formulario4 .campo select{
+        width: 73%;
+    }
+    #formulario4 button {
+        height: 25px !important;  
+        font-size: 8px;
+        padding: 0;
+        position: relative;
+        bottom: -20px;
+
+    }
+    #formulario5 .campo {
+        width: 100%;
+        height: 15%;
+        text-align: center;
+    }
+    #formulario5 .campo15 input{
+        width: 50%;
+        margin-left: 13px;
+    }
+    
+    #formulario5 button.btnRecuperar {
+        height: 15%;
+        font-size: 8px;
+        padding: 0;
+       
+    }
+    
+}
+
+@keyframes ilustrationAnimate {
+    0% {
+        transform: scale(1);  
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
